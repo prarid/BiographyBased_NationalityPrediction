@@ -11,5 +11,10 @@ This project consists of the following key stages:
    * <b>Part 1 - Classification Model on the Unbalanced Dataset:</b> The logistic regression model has an aggregate macro f1 score of .87 and micro f1 score .89 
    * <b>Part 2 - Balancing the Dataset:</b> imblearn is used to undersample the dominant classes (nationality is "american" or "british"), followed by SMOTE to oversample all minority classes, such that all classes have 30Krecords each in the dataset. The logistic model on this updated dataset has an aggregate macro f1 score of .85 and micro f1 score .85. While the aggregate scores remain largely the same, we can see in the figure below that minority class performance improves (e.g, "irish")
 
+<b>Confusion Matrix - Unbalanced Dataset</b>
+![LogReg_ConfMatrix.png](NationalityPrediction/Images/LogReg_ConfMatrix.png)
+
+<b>Confusion Matrix - Balanced Dataset</b>
+![LogReg_Bal_ConfMatrix.png](NationalityPrediction/Images/LogReg_Bal_ConfMatrix.png)
 
 The code files and other relevant details can be found [here](https://github.com/prarid/BiographyBased_NationalityPrediction/blob/main/NationalityPrediction/WikiNationalityPrediction.ipynb)
